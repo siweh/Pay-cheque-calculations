@@ -2,7 +2,7 @@
 
 int main()
 {
-	float wage,tax,gross;
+	float wage,monthWage,tax,gross;
 	int week;
 
 	printf("\nHow much do you earn per week?:R ");
@@ -12,11 +12,11 @@ int main()
 	scanf("%d",&week);
 
 
-	wage = wage * week;
-	tax = wage * 0.1;
-	gross = wage - tax;
+	monthWage = wage * week;
+	tax = monthWage * 0.1;
+	gross = monthWage - tax;
 
-	printf("\nYour basic wage after deductions R%2.f",wage);
+	printf("\nYour basic wage a month before deductions R%2.f",monthWage);
 
 	printf("\nYour tax is R%2.f",tax);
 
